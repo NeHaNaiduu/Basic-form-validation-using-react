@@ -1,0 +1,122 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #ff7b3d;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.info{
+  background-color: rgb(243, 184, 9);
+  border-radius: 2rem;
+  width: 60vmin;
+  height: 40vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#validation-wrapper{
+  background: url('pika2.jpg');
+  background-size: cover;
+  width: 100vmin;
+  display: flex;
+  align-items: center;
+  height: 50vmin;
+  border-radius: 1rem;
+  position: relative;
+}
+form{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input{
+  padding: 15px;
+  width: 50vmin;
+  text-align: center;
+  margin-bottom: 5px;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 1px solid gray;
+  font-size: medium;
+}
+.click-to-connect{
+  transition: all 0.4s ease;
+}
+.click-to-connect:hover{
+  background-color: rgb(245, 133, 4);
+  border-color: black;
+  color: black;
+  font-weight: bold;
+}
+[type=submit]{
+  width: 37vmin;
+  transition:all 0.4s ease;
+}
+[type=submit]:hover{
+  background-color: rgb(246, 132, 10);
+  color: black;
+  font-weight:bold;
+  border-color: black;
+}
+#thanks{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+#thanks img{
+  width: 400px;
+  border-radius: 4rem;
+}
+
+
